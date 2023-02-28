@@ -1,0 +1,70 @@
+.dataTables_processing{
+    background-color: white;
+    z-index: 100;
+}
+#datatable{
+    width: 100%;
+}
+tbody td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dataTables_length label,
+.dataTables_filter label{
+    color: white;
+}
+.dataTables_length select{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.dataTables_paginate a.current{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.dataTables_paginate a{
+    background-color: #000;
+    color: white;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dataTables_paginate a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 767px){
+    .data-cover{
+        overflow-y:hidden;
+        overflow-x:scroll;
+        white-space: nowrap;
+        padding-bottom: 25px;
+    }
+    .dataTables_info{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 768px){
+    .dataTables_length{
+        position: absolute;
+        top: 0;
+    }
+    .dataTables_paginate{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.porto-cover{
+	border-radius:20px;
+	box-shadow: 3px 2.5px 2px white;
+}
+a.porto-column{
+	color: white;
+	transition: .5s ease;
+}
+a.porto-column:hover{
+	opacity: 75%;
+	transition: .5s ease;
+}
+a.porto-column .image-porto-cover{
+	transition: .5s ease;
+}
+a.porto-column:hover > .image-porto-cover{
+	transform: translateY(-10px);
+	transition: .5s ease;
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.image-porto-cover{
+		height: 150px;
+	}
+	.porto-cover h5{
+		font-size: 100%;
+		height: 75px;
+	}
+	.porto-cover small{
+		font-size: 75%;
+	}
+}
+@media screen and (min-width: 992px){
+	.image-porto-cover{
+		height: 150px;
+	}
+	.porto-cover h5{
+		height: 100px;
+	}
+}
