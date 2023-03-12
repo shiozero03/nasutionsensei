@@ -386,6 +386,10 @@
 						<a target="__blank" href="{{ $port->link }}" class="text-decoration-none porto-column">
 						@elseif($port->category == 'Journal')
 						<a target="__blank" href="{{ URL('assets/pdf/landing-page/portfolio/Journal/'.$port->link) }}" class="text-decoration-none porto-column">
+                        @elseif($port->category == 'Skripsi')
+						<a target="__blank" href="{{ URL('assets/pdf/landing-page/portfolio/skripsi/'.$port->link) }}" class="text-decoration-none porto-column">
+                        @elseif($port->category == 'Design')
+                        <a target="__blank" href="{{ URL('assets/images/landing-page/portfolio/design/'.$port->link) }}" class="text-decoration-none porto-column">
 						@else
 						<a href="" class="text-decoration-none porto-column">
 						@endif
