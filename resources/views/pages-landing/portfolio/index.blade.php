@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="mt-md-3 mt-5 mb-5">
 			<section>
-				<h1 class="text-white" >Article</h1>
+				<h1 class="text-white" >Portfolio</h1>
 				<div class="border border-white border-1 my-2"></div>
 			</section>
 			<section>
@@ -19,6 +19,10 @@
 							<a target="__blank" href="{{ $port->link }}" class="text-decoration-none porto-column">
 							@elseif($port->category == 'Journal')
 							<a target="__blank" href="{{ URL('assets/pdf/landing-page/portfolio/journal/'.$port->link) }}" class="text-decoration-none porto-column">
+                            @elseif($port->category == 'Skripsi')
+							<a target="__blank" href="{{ URL('assets/pdf/landing-page/portfolio/skripsi/'.$port->link) }}" class="text-decoration-none porto-column">
+                            @elseif($port->category == 'Design')
+                            <a target="__blank" href="{{ URL('assets/images/landing-page/portfolio/design/'.$port->link) }}" class="text-decoration-none porto-column">
 							@else
 							<a href="" class="text-decoration-none porto-column">
 							@endif
